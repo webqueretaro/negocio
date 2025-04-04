@@ -7,12 +7,12 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <title>Mi Página Web Mejorada - v2</title>
+    <title>Mi Página Web Mejorada - v3</title> <!-- Actualizado de v2 a v3 -->
     <style>
         /* Estilos generales */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #9b79f6;
+            background-color: #ffcccb;
             color: #333;
             margin: 0;
             padding: 0;
@@ -23,22 +23,15 @@
         /* Estilos para el encabezado */
         header {
             background-color: #9ff4a6;
-            color: white;
-            padding: 20px 0;
+            padding: 0; /* Quitamos el padding para que la imagen ocupe todo el espacio */
             text-align: center;
+            width: 100%;
         }
 
-        nav {
-            text-align: center;
-            background-color: #7bd389;
-            padding: 10px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
+        header img {
+            width: 100%; /* La imagen ocupará todo el ancho del encabezado */
+            height: auto; /* Mantiene la proporción de la imagen */
+            display: block; /* Asegura que no haya espacios adicionales */
         }
 
         /* Estilos para el contenido principal */
@@ -85,6 +78,14 @@
             display: flex;
             justify-content: space-between;
             border-bottom: 1px solid #ddd;
+        }
+
+        /* Estilos para las imágenes dentro de las secciones del menú */
+        .menu-section-img {
+            width: 80px; /* Tamaño más pequeño para que no rompa el diseño */
+            height: auto;
+            display: block;
+            margin: 10px auto;
         }
 
         /* Estilos para la sección de contacto */
@@ -150,15 +151,9 @@
 </head>
 <body>
     <header>
-        <h1>Bienvenido a Nuestro Restaurante - v2</h1>
+        <!-- Reemplazamos el texto por una imagen que abarque todo el encabezado -->
+        <img src="header-image.jpg?v=3" alt="Encabezado del Restaurante"> <!-- Placeholder para la imagen del encabezado -->
     </header>
-
-    <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#acerca">Acerca de Nosotros</a>
-        <a href="#menu">Menú</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
 
     <main>
         <section id="inicio">
@@ -172,14 +167,14 @@
         </section>
 
         <section id="menu" class="menu">
-            <!-- Agregamos un parámetro de versión a la imagen para evitar caché -->
-            <img src="hamburguesa.jpg?v=2" alt="Hamburguesa">
+            <!-- Imagen general del menú -->
+            <img src="hamburguesa.jpg?v=3" alt="Hamburguesa"> <!-- Actualizado de v=2 a v=3 -->
             <h2>Menú</h2>
 
             <!-- Snacks -->
             <h3>Snacks</h3>
             <ul>
-                <li>Papas a la Francesa (200 gr) <span>$55</span></li>
+                <li>Papas a la Francesa (200 gr) <span>$60</span></li>
                 <li>Papas Gajo (200 gr, con lemon pepper o sazonadas) <span>$65</span></li>
                 <li>Aros de Cebolla (8 piezas, con dip chipotle) <span>$65</span></li>
                 <li>Jalapeño Poppers (4 piezas, con aderezo ranch) <span>$65</span></li>
@@ -188,6 +183,8 @@
 
             <!-- Hamburguesas -->
             <h3>Hamburguesas</h3>
+            <!-- Imagen para la sección de Hamburguesas -->
+            <img src="hamburguesas-section.jpg?v=3" alt="Hamburguesas" class="menu-section-img">
             <ul>
                 <li>OG Burger (pan artesanal, carne de res, queso cheddar, tocino, cama de vegetales) <span>$140</span></li>
                 <li>Cheers (pan artesanal, carne de res, jamón, cebolla caramelizada, costra de queso oaxaca) <span>$145</span></li>
@@ -202,6 +199,8 @@
 
             <!-- Alitas -->
             <h3>Alitas</h3>
+            <!-- Imagen para la sección de Alitas -->
+            <img src="alitas-section.jpg?v=3" alt="Alitas" class="menu-section-img">
             <ul>
                 <li>6 Alitas <span>$90</span></li>
                 <li>12 Alitas <span>$175</span></li>
