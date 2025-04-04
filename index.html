@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web Mejorada</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #9b79f6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Estilos para el encabezado */
+        header {
+            background-color: #9ff4a6;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        /* Estilos para el contenido principal */
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Estilos para la sección del menú */
+        .menu {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        .menu h2 {
+            text-align: center;
+            color: #9b79f6;
+        }
+
+        .menu h3 {
+            color: #333;
+            border-bottom: 2px solid #9b79f6;
+            padding-bottom: 5px;
+        }
+
+        .menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu li {
+            padding: 5px 0;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Estilos para el pie de página */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 30px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Página Web</h1>
+    </header>
+
+    <main>
+        <section class="menu">
+            <h2>Menú</h2>
+            
+            <h3>Hamburguesas</h3>
+            <ul>
+                <li>OG Burger <span>$140</span></li>
+                <li>Cheers <span>$145</span></li>
+                <li>Chicken Bite <span>$135</span></li>
+                <li>Tropical <span>$145</span></li>
+                <li>Fuego <span>$150</span></li>
+                <li>Norteña <span>$155</span></li>
+                <li>Doctor Cheese <span>$160</span></li>
+                <li>Carne Extra <span>$30</span></li>
+            </ul>
+            
+            <h3>Snacks</h3>
+            <ul>
+                <li>Papas a la Francesa <span>$55</span></li>
+                <li>Papas Gajo <span>$65</span></li>
+                <li>Aros de Cebolla <span>$65</span></li>
+                <li>Jalapeño Poppers <span>$65</span></li>
+                <li>Sampler <span>$125</span></li>
+            </ul>
+
+            <h3>Alitas</h3>
+            <ul>
+                <li>6 Alitas <span>$90</span></li>
+                <li>12 Alitas <span>$175</span></li>
+                <li>18 Alitas <span>$265</span></li>
+            </ul>
+
+            <h3>Boneless</h3>
+            <ul>
+                <li>.180 gr <span>$118</span></li>
+                <li>.250 gr <span>$170</span></li>
+                <li>.500 gr <span>$320</span></li>
+            </ul>
+
+            <h3>Salsas</h3>
+            <ul>
+                <li>BBQ Home Style</li>
+                <li>Cajun</li>
+                <li>Mezcal</li>
+                <li>Tamarindo</li>
+                <li>Parmesano</li>
+                <li>Buffalo</li>
+                <li>BBQ Fuego</li>
+                <li>Tama Fuego</li>
+                <li>Buffalo Fuego</li>
+                <li>Mango Habanero</li>
+                <li>Cheers Fire</li>
+                <li>XCheers</li>
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="https://formsubmit.co/arcosqueretaro@gmail.com" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
