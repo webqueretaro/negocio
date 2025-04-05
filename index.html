@@ -7,7 +7,7 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <title>Mi Página Web Mejorada - v3</title> <!-- Actualizado de v2 a v3 -->
+    <title>Mi Página Web Mejorada - v4</title>
     <style>
         /* Estilos generales */
         body {
@@ -23,15 +23,31 @@
         /* Estilos para el encabezado */
         header {
             background-color: #9ff4a6;
-            padding: 0; /* Quitamos el padding para que la imagen ocupe todo el espacio */
+            padding: 0;
             text-align: center;
             width: 100%;
         }
 
         header img {
-            width: 100%; /* La imagen ocupará todo el ancho del encabezado */
-            height: auto; /* Mantiene la proporción de la imagen */
-            display: block; /* Asegura que no haya espacios adicionales */
+            width: 100%;
+            height: auto; /* Mantiene la proporción de la imagen (1200x1000px o 1200x400px) */
+            max-height: 600px; /* Limita la altura máxima en pantallas pequeñas */
+            object-fit: cover; /* Recorta la imagen para que encaje sin distorsionarse */
+            object-position: center; /* Centra la imagen */
+            display: block;
+        }
+
+        /* Ajuste para pantallas pequeñas */
+        @media (max-width: 768px) {
+            header img {
+                max-height: 400px; /* Reduce la altura máxima en móviles */
+            }
+        }
+
+        @media (max-width: 480px) {
+            header img {
+                max-height: 300px; /* Aún más pequeño en pantallas muy pequeñas */
+            }
         }
 
         /* Estilos para el contenido principal */
@@ -82,7 +98,7 @@
 
         /* Estilos para las imágenes dentro de las secciones del menú */
         .menu-section-img {
-            width: 80px; /* Tamaño más pequeño para que no rompa el diseño */
+            width: 80px;
             height: auto;
             display: block;
             margin: 10px auto;
@@ -151,8 +167,7 @@
 </head>
 <body>
     <header>
-        <!-- Reemplazamos el texto por una imagen que abarque todo el encabezado -->
-        <img src="header-image.jpg?v=3" alt="Encabezado del Restaurante"> <!-- Placeholder para la imagen del encabezado -->
+        <img src="header-image.jpg?v=4" alt="Encabezado del Restaurante">
     </header>
 
     <main>
@@ -167,8 +182,7 @@
         </section>
 
         <section id="menu" class="menu">
-            <!-- Imagen general del menú -->
-            <img src="hamburguesa.jpg?v=3" alt="Hamburguesa"> <!-- Actualizado de v=2 a v=3 -->
+            <img src="hamburguesa.jpg?v=4" alt="Hamburguesa">
             <h2>Menú</h2>
 
             <!-- Snacks -->
@@ -183,8 +197,7 @@
 
             <!-- Hamburguesas -->
             <h3>Hamburguesas</h3>
-            <!-- Imagen para la sección de Hamburguesas -->
-            <img src="hamburguesas-section.jpg?v=3" alt="Hamburguesas" class="menu-section-img">
+            <img src="hamburguesas-section.jpg?v=4" alt="Hamburguesas" class="menu-section-img">
             <ul>
                 <li>OG Burger (pan artesanal, carne de res, queso cheddar, tocino, cama de vegetales) <span>$140</span></li>
                 <li>Cheers (pan artesanal, carne de res, jamón, cebolla caramelizada, costra de queso oaxaca) <span>$145</span></li>
@@ -199,8 +212,7 @@
 
             <!-- Alitas -->
             <h3>Alitas</h3>
-            <!-- Imagen para la sección de Alitas -->
-            <img src="alitas-section.jpg?v=3" alt="Alitas" class="menu-section-img">
+            <img src="alitas-section.jpg?v=4" alt="Alitas" class="menu-section-img">
             <ul>
                 <li>6 Alitas <span>$90</span></li>
                 <li>12 Alitas <span>$175</span></li>
